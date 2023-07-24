@@ -28,3 +28,11 @@ spring:
           uri: lb://pregunta-service
           predicates:
             - Path=/preguntas/**
+        - id: preguntaintermedia-service
+          uri: lb://preguntaintermedia-service
+          predicates:
+            - Path=/preguntas-intermedias/**
+        - id: preguntaavanzada-service
+          uri: lb://preguntaavanzada-service
+          predicates:
+            - Path=/preguntas-avanzadas/**
